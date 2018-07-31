@@ -1,0 +1,23 @@
+{
+  "tabWidth": 4,
+  "printWidth": 120,
+  "semi": false,
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "useTabs": false,
+  "bracketSpacing": true,
+  "overrides": [
+    {
+      "files": "{*.js?(on),.*.json,*.scss,.prettierrc}",
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": "{.prettierrc}",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}
