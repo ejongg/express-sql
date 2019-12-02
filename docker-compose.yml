@@ -1,32 +1,13 @@
-version: '3.5'
+version: '3.7'
 
 services:
-  node:
-    build: 
-      context: .
-      dockerfile: node.dockerfile
-    volumes: 
-      - ./api:/usr/src/app
-      - /usr/src/app/node_modules
-    ports:
-      - '3000:3000'
-    depends_on: 
-      - postgres
-    networks:
-      - app-network
-    env_file: 
-      - ./env/dev.env
-    restart: always
-
   postgres:
-    image: postgres:latest
+    image: postgres:12
     ports:
       - '5432:5432'
-    networks: 
-      - app-network
-    env_file:
-      - ./env/postgres.env
-
-networks:
-  app-network:
-    driver: bridge
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=seed
