@@ -3,12 +3,16 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}\\index.js"
-        }
-    ]
+    "configurations": [{
+        "type": "node",
+        "request": "launch",
+        "name": "API",
+        "program": "${workspaceRoot}/dist/server.js",
+        "stopOnEntry": false,
+        "cwd": "${workspaceRoot}",
+        "envFile": "${workspaceFolder}/env/dev.env",
+        "sourceMaps": true,
+        "outFiles": ["${workspaceFolder/dist/**/*.js}"],
+        "protocol": "inspector"
+    }]
 }

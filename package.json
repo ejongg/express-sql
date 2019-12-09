@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./dist/server",
+    "build-backend": "tsc",
+    "start": "env-cmd --no-override -f env/dev.env node ./dist/server",
+    "sync": "env-cmd --no-override -f env/dev.env node ./dist/scripts/sync",
     "watch-backend": "tsc -w"
   },
   "keywords": [],
@@ -16,6 +17,7 @@
     "@types/sequelize": "^4.28.6",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "env-cmd": "^10.0.1",
     "express": "^4.17.1",
     "helmet": "^3.21.2",
     "morgan": "^1.9.1",

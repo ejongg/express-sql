@@ -8,15 +8,9 @@
   "bracketSpacing": true,
   "overrides": [
     {
-      "files": "{*.js?(on),.*.json,*.scss,.prettierrc}",
+      "files": "{*.js?(on),.*.json,*.yml,*.scss,.prettierrc}",
       "options": {
         "tabWidth": 2
-      }
-    },
-    {
-      "files": "{.prettierrc}",
-      "options": {
-        "parser": "json"
       }
     }
   ]
