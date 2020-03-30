@@ -1,8 +1,8 @@
 import { Router } from 'express'
-import userRoutes from './users'
+import songRoutes from './songs'
 
 const router = Router()
 
-router.use(userRoutes)
+router.use(songRoutes)
 
 export default router

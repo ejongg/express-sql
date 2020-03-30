@@ -1,11 +1,11 @@
 import { DataTypes, Model } from 'sequelize'
 import { Attribute, Options } from 'sequelize-decorators'
-import sequelize from '../db'
+import { sequelize } from '../db'
 
 @Options({
     sequelize,
 })
-class User extends Model {
+export class Song extends Model {
     @Attribute({
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,
@@ -15,16 +15,23 @@ class User extends Model {
     public id: string
 
     @Attribute({
-        type: DataTypes.TEXT,
+        type: DataTypes.STRING,
         allowNull: false,
+        validate: { notEmpty: true },
     })
-    public username: string
+    public title: string
+
+    @Attribute({
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: { notEmpty: true },
+    })
+    public artist: string
 
     @Attribute({
         type: DataTypes.TEXT,
         allowNull: false,
+        validate: { notEmpty: true },
     })
-    public password: string
+    public content: string
 }
-
-export default User

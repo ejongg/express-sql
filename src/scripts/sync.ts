@@ -1,4 +1,3 @@
-import sequelize from '../db'
-import '../models'
+import { sequelize } from '../db'
 
 sequelize.sync({ force: true })
