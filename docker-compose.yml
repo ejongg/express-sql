@@ -10,7 +10,7 @@ services:
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=music-sheet
+      - POSTGRES_DB=express-seed
   postgres-test:
     image: postgres:12
     ports:
@@ -20,7 +20,7 @@ services:
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=music-sheet-test
+      - POSTGRES_DB=express-seed-test
 
 volumes:
   pgdata:

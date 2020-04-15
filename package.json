@@ -1,25 +1,23 @@
 {
-  "name": "todos",
-  "version": "1.0.0",
-  "description": "",
+  "name": "express-seed",
+  "version": "0.5.0",
+  "description": "Seed project for express ts",
   "main": "index.js",
   "scripts": {
-    "build-backend": "tsc",
+    "build": "tsc",
     "start": "env-cmd --no-override -f env/dev.env node ./dist/server",
     "sync": "env-cmd --no-override -f env/dev.env node ./dist/scripts/sync",
-    "watch-backend": "tsc -w"
+    "watch": "tsc -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/uuid": "^3.4.7",
     "bignumber.js": "^9.0.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "env-cmd": "^10.0.1",
     "express": "^4.17.1",
-    "fast-json-patch": "^3.0.0-1",
     "helmet": "^3.21.2",
     "lodash": "^4.17.15",
     "morgan": "^1.9.1",
@@ -42,6 +40,7 @@
     "@types/bignumber.js": "^5.0.0",
     "@types/lodash": "^4.14.149",
     "@types/node-fetch": "^2.5.4",
+    "@types/uuid": "^3.4.7",
     "mocha": "^6.2.2",
     "source-map-support": "^0.5.16",
     "typescript": "^3.7.2"
