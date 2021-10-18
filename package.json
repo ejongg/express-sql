@@ -35,7 +35,7 @@
     "@types/helmet": "0.0.48",
     "@types/mocha": "^5.2.7",
     "@types/morgan": "^1.9.2",
-    "@types/node": "^12.12.8",
+    "@types/node": "14.17.27",
     "@types/sequelize": "^4.28.6",
     "@types/bignumber.js": "^5.0.0",
     "@types/lodash": "^4.14.149",
