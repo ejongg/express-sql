@@ -43,6 +43,6 @@
     "@types/uuid": "8.3.0",
     "mocha": "6.2.2",
     "source-map-support": "0.5.16",
-    "typescript": "3.7.2"
+    "typescript": "3.9.10"
   }
 }
