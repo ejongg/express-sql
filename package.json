@@ -36,7 +36,7 @@
     "@types/mocha": "5.2.7",
     "@types/morgan": "1.9.2",
     "@types/node": "12.12.8",
-    "@types/sequelize": "4.28.6",
+    "@types/sequelize": "4.28.20",
     "@types/bignumber.js": "5.0.0",
     "@types/lodash": "4.14.149",
     "@types/node-fetch": "2.5.4",
