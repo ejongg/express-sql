@@ -38,7 +38,7 @@
     "@types/node": "12.12.8",
     "@types/sequelize": "4.28.6",
     "@types/bignumber.js": "5.0.0",
-    "@types/lodash": "4.14.149",
+    "@types/lodash": "4.17.15",
     "@types/node-fetch": "2.5.4",
     "@types/uuid": "8.3.0",
     "mocha": "^6.2.2",
